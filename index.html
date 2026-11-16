@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="game">
+        <h1>✊ Pedra, Papel e Tesoura</h1>
+        <p class="subtitle">Escolha sua jogada e desafie o computador!</p>
+
+        <section class="scoreboard">
+            <div class="score">
+                <span>Você</span>
+                <strong id="player-score">0</strong>
+            </div>
+
+            <div class="score">
+                <span>Computador</span>
+                <strong id="computer-score">0</strong>
+            </div>
+        </section>
+
+        <section class="battle">
+            <div class="player">
+                <h2>Você</h2>
+                <div class="choice" id="player-choice">❔</div>
+            </div>
+
+            <span class="versus">VS</span>
+
+            <div class="player">
+                <h2>Computador</h2>
+                <div class="choice" id="computer-choice">❔</div>
+            </div>
+        </section>
+
+        <h2 id="result">Faça sua jogada!</h2>
+        <p id="message">Quem será o vencedor?</p>
+
+        <section class="buttons">
+            <button onclick="play('pedra')">
+                ✊ <span>Pedra</span>
+            </button>
+
+            <button onclick="play('papel')">
+                ✋ <span>Papel</span>
+            </button>
+
+            <button onclick="play('tesoura')">
+                ✌️ <span>Tesoura</span>
+            </button>
+        </section>
+
+        <button class="reset" onclick="resetGame()">
+            Reiniciar jogo
+        </button>
+    </main>
+
+</body>
+</html>
